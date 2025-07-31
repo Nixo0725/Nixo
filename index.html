@@ -3,38 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio de Robin Girbal</title>
+  <title>Portfolio Robin Girbal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Robin Girbal</h1>
-    <p>Développeur Web & Passionné de Tech</p>
-  </header>
-
-  <section id="about">
-    <h2>À propos de moi</h2>
-    <p>
-      Bonjour ! Je suis Robin, développeur full-stack avec une passion pour le JavaScript, Python et la création d'expériences web modernes.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projets récents</h2>
+  <nav>
     <ul>
-      <li><strong>Mon site perso</strong> - Un site statique hébergé sur GitHub Pages.</li>
-      <li><strong>Bot Discord</strong> - Un bot pour gérer les serveurs communautaires.</li>
-      <li><strong>Jeu platformer</strong> - Un petit jeu développé en JavaScript.</li>
+      <li><a href="#about" class="nav-link active">À propos</a></li>
+      <li><a href="#projects" class="nav-link">Projets</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:robin.girbal@example.com">robin.girbal@example.com</a></p>
-  </section>
+  <main>
+    <section id="about" class="section">
+      <h1>Robin Girbal</h1>
+      <p class="subtitle">Développeur Web & Passionné de Tech</p>
+      <p>Salut ! Je suis Robin, développeur full-stack spécialisé en JavaScript, Python et création d’expériences web modernes.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projets récents</h2>
+      <ul>
+        <li><strong>Site perso</strong> — Un site statique hébergé sur GitHub Pages.</li>
+        <li><strong>Bot Discord</strong> — Gestion de serveurs communautaires.</li>
+        <li><strong>Jeu platformer</strong> — Petit jeu en JavaScript.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:robin.girbal@example.com">robin.girbal@example.com</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Robin Girbal - Portfolio</p>
+    <p>© 2025 Robin Girbal</p>
   </footer>
 
   <script src="script.js"></script>
