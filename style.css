@@ -1,44 +1,106 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 700px;
-  margin: auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  color: #222;
+:root {
+  --color-bg-main: #0D1B2A;
+  --color-bg-secondary: #1E2A47;
+  --color-text-main: #E0E0E0;
+  --color-title: #00BCD4;
+  --color-accent-light: #26C6DA;
+  --color-border: #22355F;
+  --color-text-secondary: #777777;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: var(--color-bg-secondary);
+  padding: 12px 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--color-title);
+  color: var(--color-bg-main);
+}
+
+main {
+  max-width: 700px;
+  margin: 80px auto 40px; /* top margin to avoid nav */
+  padding: 0 20px;
+}
+
+.section {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
 }
 
 h1 {
+  color: var(--color-title);
   font-size: 2.5rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
 }
 
 h2 {
-  border-bottom: 2px solid #007acc;
-  padding-bottom: 5px;
-  color: #007acc;
+  color: var(--color-title);
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  color: var(--color-accent-light);
 }
 
 a {
-  color: #007acc;
-  text-decoration: none;
+  color: var(--color-title);
 }
 
 a:hover {
+  color: var(--color-accent-light);
   text-decoration: underline;
-}
-
-section {
-  margin-bottom: 30px;
 }
 
 footer {
   text-align: center;
-  font-size: 0.8rem;
-  color: #777;
-  margin-top: 40px;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 30px;
 }
